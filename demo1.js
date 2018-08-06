@@ -1,0 +1,10 @@
+const os=require('os');
+const _ = require('lodash');
+const yargs= require('yargs');
+var a=_.uniq(['Yaseen',1,'hello','Yaseen']);
+console.log(`Hello NODE${os.userInfo().username}`+os.userInfo().username+_.isString("hello")+_.uniq(['Yaseen','hello','yaseen']));
+console.log(a);
+var command=process.argv[2];
+console.log(command);
+var argv=yargs.argv;
+console.log(argv);
